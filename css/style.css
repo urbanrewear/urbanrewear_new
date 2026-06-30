@@ -806,3 +806,52 @@ grid-template-columns:1fr;
     margin-right:10px;
 
 }
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq-section{
+
+    background:#F8FAFC;
+
+}
+
+.accordion-item{
+
+    border:none;
+
+    border-radius:18px !important;
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.accordion-button{
+
+    font-weight:600;
+
+    padding:22px;
+
+    background:#fff;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#E8FAF7;
+
+    color:var(--primary);
+
+}
+
+.accordion-body{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
