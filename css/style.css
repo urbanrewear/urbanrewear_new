@@ -413,3 +413,112 @@ padding:14px 0;
     transform:translateY(0);
 
 }
+/* ==========================================
+   About Section
+========================================== */
+
+.about-section{
+
+    background:#ffffff;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#E8FAF7;
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+    font-size:14px;
+
+}
+
+.about-section h2{
+
+    margin-bottom:20px;
+
+    max-width:500px;
+
+}
+
+.about-section p{
+
+    color:#64748B;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.feature-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    border:1px solid var(--border);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-card i{
+
+    font-size:30px;
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+}
+
+.feature-card h4{
+
+    margin-bottom:10px;
+
+}
+
+.feature-card p{
+
+    font-size:15px;
+
+    margin:0;
+
+}
+
+@media(max-width:768px){
+
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
