@@ -522,3 +522,74 @@ grid-template-columns:1fr;
 }
 
 }
+/* ==========================================
+   Why Choose Us
+========================================== */
+
+.why-section{
+
+    background:#F8FAFC;
+
+}
+
+.section-description{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#64748B;
+
+}
+
+.why-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.why-card i{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.why-card h4{
+
+    margin-bottom:12px;
+
+}
+
+.why-card p{
+
+    font-size:15px;
+
+    color:#64748B;
+
+    margin:0;
+
+}
