@@ -1,13 +1,13 @@
-/* ==========================================
+/* =====================================================
    Urban Rewear
-   Premium Launch Page
-========================================== */
+   Main JavaScript
+===================================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    // -------------------------------
-    // Dynamic Footer Year
-    // -------------------------------
+    /* ==========================================
+       Update Footer Year Automatically
+    ========================================== */
 
     const year = document.getElementById("year");
 
@@ -15,13 +15,56 @@ document.addEventListener("DOMContentLoaded", () => {
         year.textContent = new Date().getFullYear();
     }
 
-    // -------------------------------
-    // Scroll Animation
-    // -------------------------------
 
-    const items = document.querySelectorAll(
-        ".service-card, .trust-card, .contact-card"
-    );
+    /* ==========================================
+       Navbar Shadow on Scroll
+    ========================================== */
+
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 30) {
+
+            navbar.classList.add("shadow");
+
+        } else {
+
+            navbar.classList.remove("shadow");
+
+        }
+
+    });
+
+
+    /* ==========================================
+       Smooth Scroll
+    ========================================== */
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+        anchor.addEventListener("click", function (e) {
+
+            const target = document.querySelector(this.getAttribute("href"));
+
+            if (!target) return;
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+    });
+
+
+    /* ==========================================
+       Fade In Animation
+    ========================================== */
 
     const observer = new IntersectionObserver((entries) => {
 
@@ -37,44 +80,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }, {
 
-        threshold: 0.2
+        threshold: 0.15
 
     });
 
-    items.forEach(item => observer.observe(item));
+    document.querySelectorAll(".fade-up").forEach(el => {
 
-    // -------------------------------
-    // Glass Card Tilt Effect
-    // -------------------------------
+        observer.observe(el);
 
-    const card = document.querySelector(".glass-card");
+    });
 
-    if (card) {
 
-        card.addEventListener("mousemove", (e) => {
+    /* ==========================================
+       Button Hover Effect
+    ========================================== */
 
-            const rect = card.getBoundingClientRect();
+    document.querySelectorAll(".btn").forEach(button => {
 
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+        button.addEventListener("mouseenter", () => {
 
-            const rotateX = ((y / rect.height) - 0.5) * -4;
-            const rotateY = ((x / rect.width) - 0.5) * 4;
-
-            card.style.transform =
-                `perspective(1000px)
-                 rotateX(${rotateX}deg)
-                 rotateY(${rotateY}deg)`;
+            button.style.transition = ".25s";
 
         });
 
-        card.addEventListener("mouseleave", () => {
-
-            card.style.transform =
-                "perspective(1000px) rotateX(0deg) rotateY(0deg)";
-
-        });
-
-    }
+    });
 
 });
