@@ -666,3 +666,92 @@ grid-template-columns:1fr;
     margin-bottom:0;
 
 }
+/* ==========================================
+   Process
+========================================== */
+
+.process-section{
+
+    background:#F8FAFC;
+
+}
+
+.process-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    position:relative;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.step-number{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:50%;
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+.process-card i{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.process-card h4{
+
+    margin-bottom:15px;
+
+}
+
+.process-card p{
+
+    margin:0;
+
+    color:#64748B;
+
+}
