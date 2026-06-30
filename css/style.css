@@ -940,3 +940,50 @@ grid-template-columns:1fr;
     border:0;
 
 }
+/* ==========================================
+   Floating WhatsApp
+========================================== */
+
+.floating-whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    text-decoration:none;
+
+    box-shadow:0 15px 35px rgba(37,211,102,.35);
+
+    z-index:9999;
+
+    transition:.3s;
+
+}
+
+.floating-whatsapp:hover{
+
+    transform:scale(1.1);
+
+    color:#fff;
+
+}
