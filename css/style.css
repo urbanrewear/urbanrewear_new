@@ -755,3 +755,54 @@ grid-template-columns:1fr;
     color:#64748B;
 
 }
+/* ==========================================
+   Service Areas
+========================================== */
+
+.areas-section{
+
+    background:#ffffff;
+
+}
+
+.areas-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.areas-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.areas-card li{
+
+    padding:14px 0;
+
+    font-size:17px;
+
+    color:#334155;
+
+}
+
+.areas-card i{
+
+    color:var(--secondary);
+
+    margin-right:10px;
+
+}
